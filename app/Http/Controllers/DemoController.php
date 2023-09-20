@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class DemoController extends Controller
 {
     public function index(){
+        
         $array = [
             [
                 'name'=>'john',
@@ -18,6 +19,7 @@ class DemoController extends Controller
 
             ]
         ];
+
         return response()->json([
             'message' => '2 Users found',
             'data' => $array,
